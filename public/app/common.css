@@ -1,0 +1,32 @@
+#myapp  input[type=file]{
+    display: none;
+}
+
+#myapp .placeholder{
+    list-style: none;
+    padding:0;
+}
+
+/*my-app ul li{*/
+    /*width: 30%;*/
+    /*display: inline-block;*/
+/*}*/
+
+#myapp .placeholder .imageWrapper{
+    width: 100%;
+    height:200px;
+    border-radius: 2px;
+    border: 1px solid #aaa;
+    padding: 3px;
+}
+#myapp .placeholder .image{
+    width: 100%;
+    height:100%;
+    border-radius: 2px;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#myapp .placeholder h3{
+    font-size: 1em;
+}

@@ -1,0 +1,45 @@
+{
+    "name": "chatbox-inc/lumen",
+    "type":"package",
+    "lisence":"MIT",
+    "authors": [
+        {
+            "name": "mikakane",
+            "email": "mikakane2@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "App\\":"./backend/app",
+            "Chatbox\\Upload\\":"./src"
+        }
+    },
+    "autoload-dev":{
+        "classmap":[
+            "./backend/tests/",
+            "./backend/database/"
+        ]
+    },
+    "require": {
+        "laravel/lumen": "5.2.*",
+        "vlucas/phpdotenv": "~2.2",
+        "barryvdh/laravel-cors": "^0.8.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~4.0",
+        "psy/psysh": "@stable",
+        "barryvdh/laravel-ide-helper": "@stable",
+        "laravel/homestead": "^3.0"
+    },
+    "scripts":{
+        "post-update-cmd": [],
+        "post-package-install": [],
+        "post-install-cmd": [],
+        "post-autoload-dump": [],
+        "post-create-project-cmd": [
+            "cp .env.example .env",
+            "php artisan ide-helper:generate"
+        ]
+    }
+}
