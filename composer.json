@@ -23,7 +23,8 @@
     "require": {
         "laravel/lumen": "5.2.*",
         "vlucas/phpdotenv": "~2.2",
-        "barryvdh/laravel-cors": "^0.8.0"
+        "barryvdh/laravel-cors": "^0.8.0",
+        "chatbox-inc/heroku-php": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
