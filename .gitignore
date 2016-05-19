@@ -10,6 +10,5 @@ backend/_ide_helper.php
 Vagrantfile
 public/img/*
 !public/img/.gitempty
-public/assets/js/*
 backend/database/database.sqlite
 /storage/*

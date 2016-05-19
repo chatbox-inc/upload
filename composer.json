@@ -36,7 +36,9 @@
     "scripts":{
         "post-update-cmd": [],
         "post-package-install": [],
-        "post-install-cmd": [],
+        "post-install-cmd": [
+            "touch .env"
+        ],
         "post-autoload-dump": [],
         "post-create-project-cmd": [
             "cp .env.example .env",
