@@ -31,7 +31,9 @@ class ConsoleAppProvider extends ServiceProvider
             }
         );
 
-        $app->register(IdeHelperServiceProvider::class);
+        if(class_exists(IdeHelperServiceProvider::class)){
+            $app->register(IdeHelperServiceProvider::class);
+        }
     }
 
     protected function makeConsoleKernel(){
