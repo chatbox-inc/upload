@@ -19,6 +19,7 @@ use Chatbox\Upload\Service\FileStorageServiceInterface;
 
 use Chatbox\Upload\Commands\SchemaCommand;
 
+
 class UploadServiceProvider extends ServiceProvider
 {
     public function register()

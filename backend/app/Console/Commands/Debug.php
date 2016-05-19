@@ -13,6 +13,8 @@ class Debug extends Command
     protected $signature = "debug";
 
     public function handle(){
+
+        \DB::select("select 1");
         $this->line("hogehoge");
 //        throw new \Exception("hgoehoge");
     }

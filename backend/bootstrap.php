@@ -20,6 +20,8 @@ $app->withFacades();
 
 $app->withEloquent();
 
+$app->register(\Chatbox\Heroku\HerokuServiceProvider::class);
+$app->register(\Chatbox\Heroku\HerokuPostgresServiceProvider::class);
 $app->register(\Chatbox\Upload\UploadServiceProvider::class);
 
 $app->get("/",function(){
